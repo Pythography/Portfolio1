@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="reset.css">  
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  </head>
+  <body>
+      <div id="wrapper">
+        <header class="site-header">
+          <h1>Daniel Castillo</h1>
+
+          <nav class="top-nav">
+              <div class="menu" id="menu">    
+              <ul class="menubar" id="menubar">
+              <li><a href="#">About Me</a></li>
+              <li><a href="#Works">My Work</a></li>
+              <li><a href="#Contact">Contacts</a></li>
+            </ul>
+              </div>  
+          </nav>
+        </header>
+        <div class="hero-banner">
+            <h1>Hey, I'm a <strong>Web</strong> Designer.</h1>
+            <p>Hi, I'm Daniel a freelance Web Designer and I help turn your ideas into high quality Websites.  </p>
+            <circle class="circle"></circle>
+            <ul class="animate">
+            <li class="a1">Hello World</li>
+                <br>
+
+            </ul>
+            <button class="hero-button" href="#Contact">Contact Me</button>
+        </div>
+        <div class="layout"></div>
+
+<div class="main">
+  <h1>Works I Do </h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/UI.svg " alt="UI"></div>
+        <div class="card_content">
+          <h2 class="card_title">UI Design</h2>
+          <p class="card_text">Making the user interface asthetically pleasing on an application. </p>
+<!--          <button class="btn card_btn">Read More</button>-->
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/HTMLsource.svg" alt="HTML"></div>
+        <div class="card_content">
+          <h2 class="card_title">Web Design</h2>
+          <p class="card_text">Creating websites using HTML, CSS, Javascript and more.</p>
+<!--          <button class="btn card_btn">Read More</button>-->
+        </div>
+      </div>
+    </li>
+<!--
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/Logo.svg" alt="Logo"></div>
+        <div class="card_content">
+          <h2 class="card_title">Identity Design</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+-->
+
+  </ul>
+          </div>
+    
+ <div id="Works"></div>                 
+<h3 class="made_by">My Works</h3>
+      <section class="My-Works">
+        <article class="Works1">
+            <square class="square"></square>
+            <img src="images/PortfolioPiece5.JPG" alt="Test">
+            <a href="PortfolioWebDesign1.html"><p>This piece is for a Web Design class. The assignment was to create a web page for CUNY students who are going to college for Design. The concept for the Webpage was to give students a description of colleges based on their Degree, Borough or Discipline. Click here to check it out.</p></a>
+
+              </article>
+            <article class="Works2">
+            <square class="square"></square>
+            <img src="images/PortfolioPiece6.JPG" alt="Test">
+                <a href="PorfolioWebpage2.html"><p>This piece is connected to another work of mine were I had to create a Description page for a show. I had to create it first in Figma and this is the coded version of the page. I had to also make a page for episodes and just show a description of the episodes and connect it to the home page. Click here to check the piece </p></a>
+
+              </article>
+          <article class="Works3">
+                       <square class="square"></square>
+            <img src="images/PortofolioPiece3.JPG" alt="Test">
+            <a href="PortfolioWebpage1.html"><p>This piece is for a Interface design class. The point of the assignment was to make a website all about colors and we had to show different aspects if the website with different layouts. I made a lot of interative parts of the page and had to make it easy for the viewer to see what could be used on the page. Click her to check out the piece. </p></a>
+
+              </article>
+                  <article class="Works4">
+            <square class="square"></square>
+            <img src="images/PortfolioPiece4.JPG" alt="Test">
+            <a href="PortfolioRecipe.html"><p>This piece is for an Interface class and it is for an assignment about a show. Any show we want but we need to make a description page for it. Like a card from Netflix or Hulu but it needs to cover a page. I used two columns to show a description about the show and the cast. There is also a header to show an image of the show with a brief description. Click here to check it out.</p></a>
+
+              </article>
+      </section>
+</div>
+      <div class="Contact">
+  <div class="title">
+    <h1>Contact Me</h1>
+  </div>         
+  <div class="contact-form">
+    <div class="input-fields">
+      <input type="text" class="input" placeholder="Name">
+      <input type="text" class="input" placeholder="Email Address">
+      <input type="text" class="input" placeholder="Phone">
+      <input type="text" class="input" placeholder="Subject">
+    </div>
+      <div id="Contact"></div>
+    <div class="msg">
+      <textarea placeholder="Message"></textarea>
+      <div class="btn1">Send</div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+  <p>Socials</p>
+          <p class="Socials"><img src="images/InstagramLogo.svg">  
+              <a href="https://www.instagram.com/pythography/">Pythography</a></p>
+          <p class="Socials"><img src="images/TwitterLogo.svg"> 
+              <a href="https://twitter.com/pythography"> Pythography</a></p>
+          <p class="Socials"><img src="images/GithubLogo.svg">
+              <a href="https://github.com/pythography"> Pythography</a></p>
+           <p >danielcastillo473@aol.com</p>
+
+</div>
+        
+  </body>
+</html>
